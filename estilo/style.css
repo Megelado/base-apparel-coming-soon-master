@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    display: flex;
+}
+
+main {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo {
+    margin: 40px;
+}
+
+.images #img-1 {
+    width: 30%;
+    margin: 20px;
+}
+
+.images #img-2 {
+    width: 100%;
+    height: 250px;
+}
+
+#img-3 {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 10px;
+}
+
+
+h1 p {
+    font-weight: 300;
+    text-transform: uppercase;
+    color: hsl(0, 36%, 70%);
+}
+
+h1 strong {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: hsl(0, 6%, 24%);
+}
+
+#conteudo {
+    color: hsl(0, 36%, 70%);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input {
+    border: 1px solid hsla(0, 36%, 70%, 0.538);
+    border-radius: 20px;
+    width: 100%;
+    height: 40px;
+    text-indent: 20px;
+}
+
+input:active, input:hover {
+    outline: 1px solid hsla(0, 41%, 73%, 0.538);
+}
+
+input:focus {
+    outline: 2px solid hsla(0, 41%, 73%, 0.538);
+}
+
+input::placeholder {
+    color: hsla(0, 36%, 70%, 0.538);
+}
+
+input:invalid {
+    border-color: red;
+    outline: none;
+  }
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+button {
+    background-color: hsl(0, 93%, 68%);
+    background-image: linear-gradient(to right, hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+    width: 60px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    margin-left: -50px;
+}
+
+button:hover {
+    background-image: linear-gradient(to right, hsl(0, 100%, 90%),hsl(0, 83%, 84%));
+}
