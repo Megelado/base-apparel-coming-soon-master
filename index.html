@@ -28,16 +28,23 @@
             Hello fellow shoppers! We're currently building our new fashion store.
             Add your email below to stay up-to-date with announcements and our launch deals.
           </p>
-          <div class="input-container">
-            <input type="email" placeholder="Email Address">
-            <button type="submit" onsubmit="verificarEmail()"><img id="seta" src="./images/icon-arrow.svg" alt=""></button>
-          </div>
+
+            <form action="/dados/action.php" id="form"  onsubmit="verificarEmail()" >
+              <input type="email" id="email" placeholder="Email Address" autocomplete="on">
+              <span class="error-icon hidden">!</span>
+              <button type="submit" id="botao"><img id="seta" src="./images/icon-arrow.svg" alt=""></button>
+              <br>
+              
+            </form>
+            <p id="msg"></p>
         </div>
         
       </div>
        </div>
        <div id="img-3"><img src="./images/hero-desktop.jpg" alt=""></div>
    </main>
+
+   <script src="/scripts/main.js"></script>
 
 </body>
 </html>

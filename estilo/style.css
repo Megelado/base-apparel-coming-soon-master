@@ -91,7 +91,7 @@ input:invalid {
     outline: none;
   }
 
-.input-container {
+#form {
     display: flex;
     align-items: center;
     margin-top: 20px;
